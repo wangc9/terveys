@@ -1,11 +1,24 @@
 import { useAppSelector } from '../../../../app/hooks';
-import { selectGroup } from '../../headerSlice';
+import { selectGroup, selectMenuStatus } from '../../headerSlice';
+import IconButton from '../iconButton/IconButton';
+import LogoButton from '../logoButton/LogoButton';
+import MainMenu from '../mainMenu/mainMenu';
 import RoundButton from '../roundButton/RoundButton';
 
 export default function MainServiceSelection() {
   const groupState = useAppSelector(selectGroup);
+  const menuState = useAppSelector(selectMenuStatus);
+
   return (
-    <div className="border-secondary-blue border">
+    <div className="border-secondary-blue border flex">
+      {menuState && <MainMenu />}
+      <div className="hover:bg-secondary-blue transition-all duration-200">
+        <IconButton />
+      </div>
+      <div className="px-4 flex place-content-center">
+        <LogoButton />
+      </div>
+
       {groupState === 'Henkilöasiakkaat' && (
         <nav
           className="flex grow bg-inherit py-6"

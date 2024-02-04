@@ -29,11 +29,13 @@ export type ServiceState =
 export interface HeaderSliceState {
   groupStatus: GroupState;
   serviceStatus: ServiceState;
+  menuStatus: boolean;
 }
 
 const initialState: HeaderSliceState = {
   groupStatus: 'Henkilöasiakkaat',
   serviceStatus: null,
+  menuStatus: false,
 };
 
 export const headerSlice = createSlice({
@@ -48,13 +50,19 @@ export const headerSlice = createSlice({
         state.serviceStatus = action.payload;
       },
     ),
+    changeMenuStatus: create.reducer(state => {
+      state.menuStatus = !state.menuStatus;
+    }),
   }),
   selectors: {
     selectGroup: header => header.groupStatus,
     selectService: header => header.serviceStatus,
+    selectMenuStatus: header => header.menuStatus,
   },
 });
 
-export const { changeGroup, changeService } = headerSlice.actions;
+export const { changeGroup, changeService, changeMenuStatus } =
+  headerSlice.actions;
 
-export const { selectGroup, selectService } = headerSlice.selectors;
+export const { selectGroup, selectService, selectMenuStatus } =
+  headerSlice.selectors;

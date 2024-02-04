@@ -1,18 +1,12 @@
 import { useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../../../../app/hooks';
-import { GroupState, changeGroup, selectGroup } from '../../headerSlice';
+import { SquareButtonProps } from '../squareButton/SquareButton';
+import { useAppDispatch } from '../../../../app/hooks';
+import { changeGroup, changeMenuStatus } from '../../headerSlice';
 
-export interface SquareButtonProps {
-  name: GroupState;
-}
-
-export default function SquareButton(
-  props: SquareButtonProps,
-): React.JSX.Element {
+export default function MenuGroupSelectButton(props: SquareButtonProps) {
   const { name } = props;
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
-  const activeState = useAppSelector(selectGroup);
 
   let link: string;
   switch (name) {
@@ -35,9 +29,10 @@ export default function SquareButton(
 
   return (
     <button
-      className={`px-6 py-3 font-sans text-light-blue font-normal w-fit hover:underline ${activeState === name ? 'bg-white' : 'bg-inherit'}`}
+      className="flex-grow text-left px-4 py-3 font-sans text-light-blue font-medium hover:bg-secondary-blue transition-all duration-200"
       onClick={() => {
         dispatch(changeGroup(name));
+        dispatch(changeMenuStatus());
         navigate(link);
       }}
       type="button"
