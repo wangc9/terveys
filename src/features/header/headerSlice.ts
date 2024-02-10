@@ -17,6 +17,8 @@ export type ServiceState =
   | 'Hanki työterveys'
   | 'Työkykyjohtaminen'
   | 'Digitaaliset palvelut'
+  | 'Johtamisen ja työyhteisön kehittäminen'
+  | 'Ajankohtaista'
   | 'Lisää'
   | 'Asukkaalle'
   | 'Ota yhteyttä meihin'
@@ -24,7 +26,8 @@ export type ServiceState =
   | 'Sijoittajat'
   | 'Laatu ja vastuullisuus'
   | 'Uutishuone'
-  | null;
+  | 'Yhteystiedot'
+  | undefined;
 
 export interface HeaderSliceState {
   groupStatus: GroupState;
@@ -34,7 +37,7 @@ export interface HeaderSliceState {
 
 const initialState: HeaderSliceState = {
   groupStatus: 'Henkilöasiakkaat',
-  serviceStatus: null,
+  serviceStatus: undefined,
   menuStatus: false,
 };
 

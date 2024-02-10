@@ -12,6 +12,9 @@ export default {
         'main-grey': '#f6f6f6',
         'main-text': '#1f2f27',
       },
+      transitionProperty: {
+        height: 'height',
+      },
     },
   },
   plugins: [],
