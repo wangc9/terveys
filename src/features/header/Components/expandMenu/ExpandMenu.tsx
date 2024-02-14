@@ -10,7 +10,7 @@ import {
   LocationPin,
   PeopleIcon,
   ServiceIcon,
-} from '../../public';
+} from '../../../public';
 import { useAppSelector } from '../../../../app/hooks';
 import {
   ajankohtaista,

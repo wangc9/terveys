@@ -9,6 +9,7 @@ export default {
       colors: {
         'light-blue': '#0f4baf',
         'secondary-blue': '#d9e3f3',
+        'back-blue': '#dbeaf3',
         'main-grey': '#f6f6f6',
         'main-text': '#1f2f27',
       },
