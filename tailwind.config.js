@@ -12,9 +12,15 @@ export default {
         'back-blue': '#dbeaf3',
         'main-grey': '#f6f6f6',
         'main-text': '#1f2f27',
+        'text-black': '#212322',
       },
       transitionProperty: {
         height: 'height',
+      },
+      spacing: {
+        480: '480px',
+        560: '560px',
+        1024: '1024px',
       },
     },
   },

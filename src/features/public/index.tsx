@@ -17,6 +17,14 @@ import kotona from '../../assets/terveystalo_kotona_etapalvelut.webp';
 import tilaa from '../../assets/tilaa-uutiskirje.webp';
 import toihin from '../../assets/toihin_terveystaloon.webp';
 import tt from '../../assets/tt-etusivu-tyoterveys-hero.webp';
+import influenssa from '../../assets/influenssa-vaari-lapsi-hero.webp';
+import lastenKuva from '../../assets/lasten-terveystalo_kuva.webp';
+import lastenTervey from '../../assets/lasten_terveystalo.webp';
+import rokote from '../../assets/rokotekuva.webp';
+import tarkein from '../../assets/tarkein_ensin_isa-tytto.webp';
+import tarkastus from '../../assets/terveystarkastus.webp';
+import LeftShortArrow from '../../assets/left-arrow-short.svg';
+import RightShortArrow from '../../assets/right-arrow-short.svg';
 
 export {
   ServiceIcon,
@@ -38,4 +46,12 @@ export {
   tilaa,
   toihin,
   tt,
+  influenssa,
+  lastenKuva,
+  lastenTervey,
+  rokote,
+  tarkein,
+  tarkastus,
+  LeftShortArrow,
+  RightShortArrow,
 };

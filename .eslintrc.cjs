@@ -16,5 +16,6 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': 0,
     'react/react-in-jsx-scope': 0,
+    'react/require-default-props': 0,
   },
 };

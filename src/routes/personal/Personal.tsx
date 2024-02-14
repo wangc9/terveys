@@ -11,6 +11,8 @@ import {
 } from '../../features/public';
 import { FullWidthPicText } from '../../features/public/components';
 import FrontPageBanner from '../../features/public/components/frontPageBanner/FrontPageBanner';
+import Carousel from '../../features/public/components/carousel/Carousel';
+import { ajankohtaista } from '../../utils/data';
 
 export default function Personal() {
   return (
@@ -35,6 +37,7 @@ export default function Personal() {
                 reversed={false}
                 blue={false}
               />
+              <Carousel items={ajankohtaista} />
               <FullWidthPicText
                 pic={tt}
                 alt="työterveys hero"
