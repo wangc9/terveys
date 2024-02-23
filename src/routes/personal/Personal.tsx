@@ -9,9 +9,12 @@ import {
   toihin,
   tt,
 } from '../../features/public';
-import { FullWidthPicText } from '../../features/public/components';
-import FrontPageBanner from '../../features/public/components/frontPageBanner/FrontPageBanner';
-import Carousel from '../../features/public/components/carousel/Carousel';
+import {
+  FullWidthPicText,
+  FrontPageBanner,
+  Carousel,
+  FrontPageShortcut,
+} from '../../features/public/components';
 import { ajankohtaista } from '../../utils/data';
 
 export default function Personal() {
@@ -21,12 +24,13 @@ export default function Personal() {
         <Route
           path="/"
           element={
-            <main>
+            <main className="flex flex-col justify-center">
               <FrontPageBanner
                 title="Nopeasti hyvään hoitoon"
                 subtitle="Asioi sujuvasti etänä tai yli 200 toimipaikassamme kautta maan."
                 button="Varaa aika"
               />
+              <FrontPageShortcut />
               <FullWidthPicText
                 pic={lasten}
                 alt="lasten paivystys"

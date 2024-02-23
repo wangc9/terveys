@@ -25,6 +25,10 @@ import tarkein from '../../assets/tarkein_ensin_isa-tytto.webp';
 import tarkastus from '../../assets/terveystarkastus.webp';
 import LeftShortArrow from '../../assets/left-arrow-short.svg';
 import RightShortArrow from '../../assets/right-arrow-short.svg';
+import baby from '../../assets/baby.svg';
+import euro from '../../assets/euro-sign.svg';
+import person from '../../assets/person.svg';
+import redCross from '../../assets/red-cross.svg';
 
 export {
   ServiceIcon,
@@ -54,4 +58,8 @@ export {
   tarkastus,
   LeftShortArrow,
   RightShortArrow,
+  baby,
+  euro,
+  redCross,
+  person,
 };

@@ -14,7 +14,7 @@ export default function FrontPageBanner(
   const { title, subtitle, button } = props;
 
   return (
-    <div className="pt-8 pb-16 flex justify-center">
+    <div className="pt-8 pb-16 flex self-center justify-between w-4/6">
       <div className="flex flex-col w-fit pr-6">
         <p className="text-4xl text-light-blue font-serif font-bold">{title}</p>
         <p className=" text-main-text font-sans pt-4 text-xl">{subtitle}</p>
