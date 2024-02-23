@@ -10,7 +10,7 @@ import TransparentButton from '../transparentButton/TransparentButton';
 
 export default function FrontPageShortcut(): React.JSX.Element {
   return (
-    <div className="flex flex-col py-8 self-center w-4/6">
+    <div className="flex flex-col pb-8 self-center w-4/6">
       <p className="text-xl text-main-text font-medium pb-4">Oikopolut</p>
       <nav className="flex flex-row lg:flex-col 2xl:flex-row justify-between 2xl:justify-start py-4 w-full">
         <div className="flex flex-col lg:flex-row">

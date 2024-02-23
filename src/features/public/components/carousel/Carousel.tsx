@@ -31,7 +31,7 @@ export default function Carousel(props: CarouselProps): React.JSX.Element {
   return (
     <div className="flex flex-col flex-grow bg-main-grey overflow-hidden">
       <div
-        className="flex transition-transform duration-300 ease-in-out"
+        className="flex transition-transform duration-300 ease-in-out h-max"
         style={{ transform: `translateX(-${currentIndex * 27}%)` }}
       >
         {items.map(item => (

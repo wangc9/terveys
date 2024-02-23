@@ -20,6 +20,7 @@ export default {
       spacing: {
         480: '480px',
         560: '560px',
+        800: '800px',
         1024: '1024px',
       },
     },

@@ -15,7 +15,7 @@ import {
   Carousel,
   FrontPageShortcut,
 } from '../../features/public/components';
-import { ajankohtaista } from '../../utils/data';
+import { ajankohtaista, työterveydessä } from '../../utils/data';
 
 export default function Personal() {
   return (
@@ -41,7 +41,12 @@ export default function Personal() {
                 reversed={false}
                 blue={false}
               />
-              <Carousel items={ajankohtaista} />
+              <div id="Ajankohtaista" className="flex flex-col">
+                <p className="py-12 text-light-blue font-extrabold text-4xl self-center">
+                  Ajankohtaista
+                </p>
+                <Carousel items={ajankohtaista} />
+              </div>
               <FullWidthPicText
                 pic={tt}
                 alt="työterveys hero"
@@ -52,6 +57,12 @@ export default function Personal() {
                 reversed={false}
                 blue
               />
+              <div id="Ajankohtaista työterveydessä" className="flex flex-col">
+                <p className="py-12 text-light-blue font-extrabold text-4xl self-center">
+                  Ajankohtaista työterveydessä
+                </p>
+                <Carousel items={työterveydessä} />
+              </div>
               <FullWidthPicText
                 pic={kotona}
                 alt="Kotona"

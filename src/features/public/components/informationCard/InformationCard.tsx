@@ -10,7 +10,7 @@ export default function InformationCard(
   const { img, title, subtitle } = props;
 
   return (
-    <div className="w-480 h-dvh flex flex-col">
+    <div className="w-480 h-800 flex flex-col">
       <img className="w-full" src={img} alt={title} />
       <div className="px-10 py-8 flex flex-col flex-grow bg-white">
         <span className="font-semibold text-text-black text-3xl pb-6">

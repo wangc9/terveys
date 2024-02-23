@@ -29,6 +29,16 @@ import baby from '../../assets/baby.svg';
 import euro from '../../assets/euro-sign.svg';
 import person from '../../assets/person.svg';
 import redCross from '../../assets/red-cross.svg';
+import tyoterveys from '../../assets/tyoterveys_organisaatiokulttuuriwebinaari_mobiilihero.webp';
+import terveystarkastukset from '../../assets/terveystarkastukset.webp';
+import mieli from '../../assets/tyoterveys_mieli_tyoelamassa_webinaari.webp';
+import influenssaHero from '../../assets/influenssa_hero.webp';
+import uudistu from '../../assets/terveystarkastus-uudistuu.webp';
+import tulevaisuuden from '../../assets/tulevaisuuden-tyoelaman-tekijat--tapahtuma.webp';
+import mielenpalvelu from '../../assets/mielenpalvelut_hero.webp';
+import tulevaisuudenTerve from '../../assets/tulevaisuuden_terve_tyoelama_hero.webp';
+import ensiapu from '../../assets/ensiapu.webp';
+import suunta from '../../assets/suunta-tt.com-karuselli.webp';
 
 export {
   ServiceIcon,
@@ -62,4 +72,14 @@ export {
   euro,
   redCross,
   person,
+  tyoterveys,
+  terveystarkastukset,
+  mieli,
+  influenssaHero,
+  uudistu,
+  tulevaisuuden,
+  mielenpalvelu,
+  tulevaisuudenTerve,
+  ensiapu,
+  suunta,
 };
